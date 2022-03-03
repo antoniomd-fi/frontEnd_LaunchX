@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Amor</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="" stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="styles">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Dulce Amor
+            <span>Pasteleria</span>
+        </h1>
+        <div class="logo">
+            <img src="./Images/DulceAmor.png" alt="Logo Dulce Amor">
+        </div>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="./index.html">Inicio</a>
+            <a href="#pedidos">Pedidos</a>
+            <a href="#inventario">Inventario</a>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Pasteles bajo pedido </h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>
+                    CDMX <br> 55-55-55-55 <br> Lunes a Domingo 12:00-20:00 horas
+                </p>
+            </div>
+    </section>
+    <section id="pedidos" class="contenedorAdmin sombra">
+        <h2>Lista de Pedidos</h2>
+        <div class="datatable-container">
+            <div class="header-tools">
+                <div class="tools">
+                    <ul>
+                        <li><span><input type="checkbox"></span></li>
+                        <li>
+                            <button>
+                                <i class="material-icons">add_circle</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">edit</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">delete</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">share</i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="" class="search-input">
+                </div>
+            </div>
+            <div class="datatable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Status</th>
+                            <th>Folio de Pedido</th>
+                            <th>Nombre de Cliente</th>
+                            <th>Fecha de entrega</th>
+                            <th>Orden</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="avaiable"></span></td>
+                            <td>752</td>
+                            <td>Rodrigo Martinez</td>
+                            <td>04/03/2022</td>
+                            <td>1 Fresa Salvaje, 1 Brownie</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="away"></span></td>
+                            <td>753</td>
+                            <td>Fernanda Ochoa</td>
+                            <td>12/03/2022</td>
+                            <td>1 pza: 1/2 Brownie y 1/2 Moka, 1 Ganache extra</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="offline"></span></td>
+                            <td>754</td>
+                            <td>Antonio Martin</td>
+                            <td>22/03/2022</td>
+                            <td>2 Cheesecake</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="offline"></span></td>
+                            <td>755</td>
+                            <td>Alejandro García</td>
+                            <td>01/04/2022</td>
+                            <td>2 Cheesecake, 1 Moka, 1 flores extra</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="footer-tools">
+                    <div class="list-items">
+                        Show
+                        <select name="n-entries" id="n-enties" class="n-entries">
+                            <option value="5"> 5</option>
+                            <option value="10" selected>10</option>
+                            <option value="15">15</option>
+                        </select>
+                        entries
+                    </div>
+                    <div class="pages">
+                        <ul>
+                            <li><span class="active">1</span></li>
+                            <li><button>2</button></li>
+                            <li><button>3</button></li>
+                            <li><button>4</button></li>
+                            <li><button>...</button></li>
+                            <li><button>9</button></li>
+                            <li><button>10</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </div>
+    </section>
+    <br><br>
+    <section id="inventario" class="contenedorAdmin sombra">
+        <h2>Inventario</h2>
+        <div class="datatable-container">
+            <div class="header-tools">
+                <div class="tools">
+                    <ul>
+                        <li><span><input type="checkbox"></span></li>
+                        <li>
+                            <button>
+                                <i class="material-icons">add_circle</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">edit</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">delete</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">share</i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="" class="search-input">
+                </div>
+            </div>
+            <div class="datatable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Status</th>
+                            <th>Nombre</th>
+                            <th>Stock</th>
+                            <th>En cola</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="disponible"></span></td>
+                            <td>Red Velvet</td>
+                            <td>50</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="disponible"></span></td>
+                            <td>Fresa Salvaje</td>
+                            <td>20</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="poco"></span></td>
+                            <td>Brownie</td>
+                            <td>5</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="disponible"></span></td>
+                            <td>Moka</td>
+                            <td>20</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="poco"></span></td>
+                            <td>Cheesecake Tropical</td>
+                            <td>6</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="agotado"></span></td>
+                            <td>Pie de Moras</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="disponible"></span></td>
+                            <td>Ganache</td>
+                            <td>20</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="disponible"></span></td>
+                            <td>Flores comestibles y glaseado</td>
+                            <td>10</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                            <td><span class="disponible"></span></td>
+                            <td>Chispas</td>
+                            <td>8</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="footer-tools">
+                    <div class="list-items">
+                        Show
+                        <select name="n-entries" id="n-enties" class="n-entries">
+                            <option value="5" selected> 5</option>
+                        </select>
+                        entries
+                    </div>
+                    <div class="pages">
+                        <ul>
+                            <li><span class="active">1</span></li>
+                            <li><button>2</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Antonio Martin</p>
+    </footer>
+</body>
+
+</html>

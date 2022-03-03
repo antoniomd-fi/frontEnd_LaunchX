@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Amor</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="" stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="styles">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Dulce Amor
+            <span>Pasteleria</span>
+        </h1>
+        <div class="logo">
+            <img src="./Images/DulceAmor.png" alt="Logo Dulce Amor">
+        </div>
+    </header>
+
+    <div class="nav-bg" >
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#Sabores">Nuestros Sabores</a>
+            <a href="#Decoraciones">Nuestras Decoraciones</a>
+            <a href="#Pedido">Ordenar</a>
+            <a href="./admin.html">SignUp</a>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Pasteles bajo pedido </h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>
+                    CDMX <br> 55-55-55-55 <br> Lunes a Domingo 12:00-20:00 horas
+                </p>
+            </div>
+            <a class="boton" href="#Pedido">Ordenar</a>
+        </div>
+    </section>
+
+    <main class="contenedor sombra">
+        <h2> Sabores</h2>
+
+        <div id="Sabores" class="servicios">
+            <section class="servicio">
+                <h3>Red Velvet</h3>
+                <div class="iconos">
+                    <img src="./Images/red-velvet.jpg" alt="Pastel red velvet">
+                </div>
+                <p>$350 - personas</p>
+            </section>
+            <section class="servicio">
+                <h3>Fresa Salvaje </h3>
+                <div class="iconos">
+                    <img src="./Images/strawberry.jpg" alt="Pastel de fresa">
+                </div>
+                <p>$400 - personas</p>
+            </section>
+            <section class="servicio">
+                <h3> Brownie </h3>
+                <div class="iconos">
+                    <img src="./Images/brownie.jpg" alt="Brownie">
+                </div>
+                <p>$250 - 8 personas</p>
+            </section>
+            <section class="servicio">
+                <h3> Moka </h3>
+                <div class="iconos">
+                    <img src="./Images/choco.jpg" alt="Pastel de Moka">
+                </div>
+                <p>$400 - personas</p>
+            </section>
+            <section class="servicio">
+                <h3> Cheesecake Tropical </h3>
+                <div class="iconos">
+                    <img src="./Images/cheescake.jpg" alt="Cheescake">
+                </div>
+                <p>$500 - 8 personas</p>
+            </section>
+            <section class="servicio">
+                <h3> Pie de Moras </h3>
+                <div class="iconos">
+                    <img src="./Images/blueberry.jpg" alt="Pie de Moras">
+                </div>
+                <p>$500 - 8 personas</p>
+            </section>
+        </div>
+    </main>
+    <br><br>
+    <section class="contenedor sombra">
+        <h2>Decoraciones</h2>
+        <div id="Decoraciones" class="servicios">
+            <section class="servicio">
+                <h3>Ganache</h3>
+                <div class="iconos">
+                    <img src="./Images/ganache.jpg" alt="Ganache de chocolate">
+                </div>
+                <p>$150 extra</p>
+            </section>
+            <section class="servicio">
+                <h3>Flores comestibles y glaseado </h3>
+                <div class="iconos">
+                    <img src="./Images/flower.jpg" alt="Flores comestibles">
+                </div>
+                <p>$200 extra</p>
+            </section>
+            <section class="servicio">
+                <h3> Chispas </h3>
+                <div class="iconos">
+                    <img src="./Images/chispas.jpg" alt="Chispas">
+                </div>
+                <p>$150 extra</p>
+            </section>
+        </div>
+    </section>
+    <br><br>
+    <section id="Pedido" class="contenedor sombra">
+        <h2> Haz tu pedido</h2>
+        <div>
+            <form class="formulario">
+                <div >
+                    <label id="name-label" for "name"> Nombre
+                        <input id="name" type="text" class="entradas2" name="Nombre completo"
+                            placeholder="Nombre Completo " required>
+                    </label>
+                    <br>
+                </div>
+                <div>
+                    <label for="email" id="email-label"> Email
+                        <input id="email" type="email" class="entradas2" name="Correo electronico"
+                            placeholder="Correo Electrónico" required>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="phone" id="phone-label">Teléfono
+                        <input id="phone" type="phone" class="entradas2" name="Telefono" placeholder="Teléfono">
+                    </label>
+                    <br>
+                </div>
+                <p>¿Cómo sería tu pastel?</p>
+                <div>
+                    <label for="single">
+                        <input class="input-radio" id="single" value="sencillo" type="radio" name="name" checked> Un solo sabor
+                    </label>
+                </div>
+                <div>
+                    <label for="combined">
+                        <input class="input-radio" id="combined" value="combinado" type="radio" name="name"> Más de un sabor
+                    </label>
+                </div>
+                <br>
+                <p>Elige tu sabor o sabaores</p>
+                <div>
+                    <label for="red-velvet">
+                        <input class="input-checkbox" id="red-velvet" type="checkbox" value="redVelvet" checked> Red Velvet
+                    </label>
+                </div>
+                <div>
+                    <label for="strawberry">
+                        <input class="input-checkbox" id="strawberry" type="checkbox" value="fresa"> Fresa Salvaje
+                    </label>
+                </div>
+                <div>
+                    <label for="brownie">
+                        <input class="input-checkbox" id="brownie" type="checkbox" value="brownie">
+                        Brownie
+                    </label>
+                </div>
+                <div>
+                    <label for="moka">
+                        <input class="input-checkbox" id="moka" type="checkbox" value="moka" >
+                        Moka
+                    </label>
+                </div>
+                <div>
+                    <label for="cheesecake">
+                        <input class="input-checkbox" id="cheesecake" type="checkbox" value="cheesecake" >
+                        Cheesecake Tropical
+                    </label>
+                </div>
+                <div>
+                    <label for="blueberries">
+                        <input class="input-checkbox" id="blueberries" type="checkbox" value="moras" >
+                        Pie de moras
+                    </label>
+                </div>
+                <br>
+                <p>¿Deseas alguna decoracion o decoraciones extra?</p>
+                <div>
+                    <label for="ganache">
+                        <input class="input-checkbox" id="ganache" type="checkbox" value="ganache" checked> Ganache
+                    </label>
+                </div>
+                <div>
+                    <label for="glaseado">
+                        <input class="input-checkbox" id="glaseado" type="checkbox" value="glaseado"> Flores comestibles y glaseado
+                    </label>
+                </div>
+                <div>
+                    <label for="chispas">
+                        <input class="input-checkbox" id="chispas" type="checkbox" value="chispas"> Chispas
+                    </label>
+                </div>
+                <div>
+                    <label for="ninguno">
+                        <input class="input-checkbox" id="ninguno" type="checkbox" value="ninguno"> Ninguno
+                    </label>
+                </div>
+                <div>
+                    <p>Indicaciones especiales:</p>
+                    <label for="comentarios">
+                        <textarea id="comentarios" class="input-textarea" name="comentario"
+                            placeholder="Escribe aquí tus indicaciones..."></textarea>
+                    </label>
+                    <br>
+                </div>
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Todos los derechos reservados. Antonio Martin</p>
+    </footer>
+</body>
+
+</html>
