@@ -1,1 +1,1 @@
-###Archivo de estilos para la creación del pokedex
+### Archivo de estilos para la creación del pokedex
